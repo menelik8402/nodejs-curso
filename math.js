@@ -1,3 +1,5 @@
+const Math={}
+
 function add(x1,x2){
     return x1+x2;
 }
@@ -22,8 +24,11 @@ else
 
 }
 
-exports.addy=add;
-exports.multi=multiply;
-exports.divide=div;
-exports.subst=substract;
 
+//I'm export an Math object now
+Math.addy=add;
+Math.multi=multiply;
+Math.divide=div;
+Math.subst=substract;
+
+module.exports = Math;
