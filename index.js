@@ -1,28 +1,7 @@
-function add(x1,x2){
-        return x1+x2;
-}
-function substract(x2 ,x1){
-    return x2-x1;
+const mathy = require('./math.js');
 
-}
 
-function multiply(x1,x2){
-    return x1*x2;
-
-}
-function div(x1,x2){
-    if(x1==0)
-    {
-        console.log('NO se puede dividir  por cero');
-    }
-    else
-    {
-        return x2/x1;  
-    }
-
-}
-
-console.log(add(2,3));
-console.log(substract(2,3));
-console.log(multiply(2,3));
-console.log(div(0,0));
+console.log(mathy.addy(5,6));
+console.log(mathy.multi(5,4));
+console.log(mathy.divide(5,4));
+console.log(mathy.subst(5,4));
